@@ -4,6 +4,10 @@
 
 TikTok TechJam 2026 — Problem Statement 4: *Shopping Copilot: AI Conversational Search and Recommendations*.
 
+![Converge — a shopping copilot that converges in two turns](docs/media/converge-thumbnail-3x2.png)
+
+**[Watch the 3-minute narrated demo](https://youtu.be/pDemnrCWRWc)**
+
 | | Hit@10 | MRR | MTTC | Efficiency | **TechnicalScore** |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | Official weak BM25 starter | 0.125 | 0.0680 | 9.81 | 0.119 | **0.1067** |
@@ -12,6 +16,16 @@ TikTok TechJam 2026 — Problem Statement 4: *Shopping Copilot: AI Conversationa
 200/200 sessions converted, 96 % of them at rank 1, in a mean of **1.96 turns out of 10**.
 Produced by the **unmodified** official evaluator (`results/results.json`).
 No LLM, no network call, no third-party package: **$0.00 per session, 0 tokens, 7.7 ms per turn.**
+
+---
+
+## Demo evidence
+
+| Complete multi-turn session | Official evaluator results |
+| --- | --- |
+| ![Intent Override session](docs/media/converge-gallery-1-live-session.png) | ![TechnicalScore 0.9760](docs/media/converge-gallery-2-results.png) |
+| **Full evaluator ablation** | **Measured robustness** |
+| ![Ablation results](docs/media/converge-gallery-3-ablation.png) | ![Robustness results](docs/media/converge-gallery-4-robustness.png) |
 
 ---
 
