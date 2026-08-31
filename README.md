@@ -165,6 +165,21 @@ agent     > ...
 CONVERTED on turn 3 at rank 1
 ```
 
+## Running the final evaluation package
+
+After the Devpost deadline the organizer releases the 800-session final package. Converge needs no
+change to run against it — point the same wrapper at the released dataset:
+
+```bash
+git checkout <submitted-commit>              # the frozen submission
+python tools/bootstrap.py                    # kit + catalog, checksum verified
+python tools/run_eval.py --dataset data/final_set.jsonl --output results/final.json
+```
+
+The wrapper only chdirs into `.kit/` and calls `evaluator.local_evaluator` as shipped; no evaluator
+file, config, or label is touched. Keep `results/final.json` (it contains per-session results)
+together with the commit hash, Python version, and OS, as the submission rules require.
+
 ## How the four scenarios are handled
 
 | scenario | mechanism | Hit@10 | MRR | MTTC |
