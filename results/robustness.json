@@ -1,0 +1,26 @@
+[
+  {
+    "level": "none",
+    "hit_rate_at_10": 1.0,
+    "mrr": 0.983542,
+    "mttc": 1.955,
+    "efficiency": 0.9045,
+    "technical_score": 0.975963
+  },
+  {
+    "level": "light",
+    "hit_rate_at_10": 0.925,
+    "mrr": 0.885304,
+    "mttc": 2.885,
+    "efficiency": 0.8115,
+    "technical_score": 0.890391
+  },
+  {
+    "level": "heavy",
+    "hit_rate_at_10": 0.875,
+    "mrr": 0.709925,
+    "mttc": 3.86,
+    "efficiency": 0.714,
+    "technical_score": 0.793277
+  }
+]
